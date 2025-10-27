@@ -1,72 +1,61 @@
 # FilterAssessment
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+FilterAssessment is a small Angular demo app that showcases cascading filters (Country → State → City) and a mutual-exclusivity system for promotional offers. It pairs practical filter dependency logic with a playful, baby-themed UI (custom selects, checkboxes, badges and responsive cards).
 
-## Project Overview
+## Features
+- Cascading location filters with parent → child enable/disable logic
+- Real-time selection summary panel
+- Mutually-exclusive promotional toggles
+- Decorative, responsive UI with accessible controls
 
-**FilterAssessment** is an Angular application that demonstrates advanced filter logic and UI design. It features a cascading location filter (Country, State, City) with dependency management, and a mutual exclusivity system for promotional offers. The UI is themed for a playful, baby-friendly look, with custom-styled selects and checkboxes, responsive cards, and smooth animations.
+## Prerequisites
+- Node.js (16 or later recommended)
+- npm (comes with Node.js) or yarn
+- Angular CLI (optional, for development helpers): `npm install -g @angular/cli`
 
-Key features:
-- Cascading location filters with parent-child enable/disable logic
-- Real-time selection summary
-- Mutually exclusive offer selection with custom checkboxes
-- Modern, decorative UI with a baby-themed color palette
-- Fully responsive and accessible design
-
-This project is ideal for learning Angular component architecture, state management, and advanced UI techniques.
-
-## Development server
-
-To start a local development server, run:
+## Clone and run
+1. Clone the repository:
 
 ```bash
-ng serve
+git clone https://github.com/ROHITH609/FilterAssessment.git
+cd FilterAssessment
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. Install dependencies:
 
 ```bash
-ng generate component component-name
+npm install
+# or: yarn install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Run the development server:
 
 ```bash
-ng generate --help
+npm start
+# or: ng serve
 ```
 
-## Building
+4. Open the app: navigate to `http://localhost:4200/` in your browser.
 
-To build the project run:
+## Tests
+- Run unit tests:
 
 ```bash
-ng build
+npm test
+# or: ng test
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Build
+- Create a production build:
 
 ```bash
-ng test
+npm run build
+# or: ng build --configuration production
 ```
 
-## Running end-to-end tests
+## Notes & Troubleshooting
+- If the app doesn't start, ensure your Node and npm versions meet the prerequisites.
+- If you see template compilation errors, run `npm install` then restart the server.
+- The UI is intentionally decorative; you can tweak colors and spacing in `src/app/app.css`.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+If you'd like, I can add a screenshot, CI workflow, or a short walkthrough video link to this README.
