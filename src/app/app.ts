@@ -21,7 +21,6 @@ export class App implements OnInit {
   constructor(public filterService: FilterDependencyService, public exService: MutualExclusivityService) {}
 
   reset() {
-    // clear selections by setting empty string (service uses truthiness)
     this.filterService.setFilterValue('country', '');
     this.filterService.setFilterValue('state', '');
     this.filterService.setFilterValue('city', '');

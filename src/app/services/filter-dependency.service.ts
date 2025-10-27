@@ -6,7 +6,6 @@ export class FilterDependencyService {
   private states: { [key: string]: FilterState } = {};
 
   constructor() {
-    // Initialize values to empty string so selects show the placeholder by default
     this.states['country'] = { value: '', enabled: true };
     this.states['state'] = { value: '', enabled: false };
     this.states['city'] = { value: '', enabled: false };
@@ -25,7 +24,6 @@ export class FilterDependencyService {
       this.states['city'].value = undefined;
     }
     if (id === 'city') {
-      // No children below city in this example
     }
   }
 

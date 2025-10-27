@@ -2,6 +2,19 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
 
+## Project Overview
+
+**FilterAssessment** is an Angular application that demonstrates advanced filter logic and UI design. It features a cascading location filter (Country, State, City) with dependency management, and a mutual exclusivity system for promotional offers. The UI is themed for a playful, baby-friendly look, with custom-styled selects and checkboxes, responsive cards, and smooth animations.
+
+Key features:
+- Cascading location filters with parent-child enable/disable logic
+- Real-time selection summary
+- Mutually exclusive offer selection with custom checkboxes
+- Modern, decorative UI with a baby-themed color palette
+- Fully responsive and accessible design
+
+This project is ideal for learning Angular component architecture, state management, and advanced UI techniques.
+
 ## Development server
 
 To start a local development server, run:
